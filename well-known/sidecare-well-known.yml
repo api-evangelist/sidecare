@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.sidecare.com/.well-known/
+host: https://www.sidecare.com
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: sidecare-openid-configuration.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  SideCare publishes an OpenID Connect discovery document at
+  /.well-known/openid-configuration exposing a "Sign in with SideCare"
+  identity provider (issuer https://www.sidecare.com, authorization_code
+  flow, RS256 id tokens). No public REST API surface or security.txt found.

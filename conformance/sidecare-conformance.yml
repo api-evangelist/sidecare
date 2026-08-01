@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.sidecare.com/.well-known/openid-configuration
+standards:
+- id: openid-connect
+  conforms: true
+  evidence: >-
+    Publishes a conformant OpenID Connect discovery document at
+    /.well-known/openid-configuration (issuer, authorization/token/userinfo/jwks
+    endpoints, RS256 id_token signing, authorization_code grant).
+- id: oauth2
+  conforms: true
+  evidence: OAuth 2.0 authorization_code grant with client_secret_basic/client_secret_post token auth.
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: false
+  evidence: /.well-known/oauth-authorization-server returned 404 (only the OIDC metadata document is published).
+- id: rfc9116-security-txt
+  conforms: false
+  evidence: /.well-known/security.txt returned 404.

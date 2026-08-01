@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.sidecare.com/.well-known/openid-configuration
+docs: https://www.sidecare.com/connexion-hub
+schemes:
+- name: sidecare-oidc
+  type: openIdConnect
+  source: well-known/sidecare-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://www.sidecare.com/accounts/oauth/authorizations
+    tokenUrl: https://www.sidecare.com/accounts/oauth/tokens
+scopes:
+- scope: openid
+  description: Required OpenID Connect scope; returns the subject identifier and an ID token.
+  flows: [authorizationCode]
+  sources: [well-known/sidecare-openid-configuration.json]
+- scope: profile
+  description: Access to the end-user's profile claims (name, given_name, family_name, birthdate, phone_number).
+  flows: [authorizationCode]
+  sources: [well-known/sidecare-openid-configuration.json]
+- scope: email
+  description: Access to the end-user's email and email_verified claims.
+  flows: [authorizationCode]
+  sources: [well-known/sidecare-openid-configuration.json]
+- scope: address
+  description: Access to the end-user's postal address claim.
+  flows: [authorizationCode]
+  sources: [well-known/sidecare-openid-configuration.json]

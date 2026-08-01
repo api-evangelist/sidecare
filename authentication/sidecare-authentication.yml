@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.sidecare.com/.well-known/openid-configuration
+docs: https://www.sidecare.com/connexion-hub
+summary:
+  types: [openIdConnect, oauth2]
+  oauth2_flows: [authorizationCode]
+  note: >-
+    SideCare operates an OpenID Connect provider ("Sign in with SideCare")
+    discovered via /.well-known/openid-configuration. No public developer
+    API with documented securitySchemes was found; this profiles the OIDC
+    identity surface only.
+schemes:
+- name: sidecare-oidc
+  type: openIdConnect
+  openIdConnectUrl: https://www.sidecare.com/.well-known/openid-configuration
+  issuer: https://www.sidecare.com
+  authorization_endpoint: https://www.sidecare.com/accounts/oauth/authorizations
+  token_endpoint: https://www.sidecare.com/accounts/oauth/tokens
+  userinfo_endpoint: https://www.sidecare.com/accounts/oauth/user_info
+  jwks_uri: https://www.sidecare.com/accounts/oauth/jwks.json
+  end_session_endpoint: https://www.sidecare.com/accounts/oauth/sessions/logout
+  response_types_supported: [code]
+  grant_types_supported: [authorization_code]
+  id_token_signing_alg_values_supported: [RS256]
+  token_endpoint_auth_methods_supported: [client_secret_basic, client_secret_post]
+  scopes_supported: [openid, profile, email, address]
+  claims_supported: [iss, sub, aud, nonce, exp, iat, name, given_name, family_name, birthdate, phone_number, email, email_verified, address]
+  sources: [well-known/sidecare-openid-configuration.json]

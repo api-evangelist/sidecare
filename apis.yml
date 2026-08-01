@@ -1,8 +1,29 @@
 aid: sidecare
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sidecare.png
 name: SideCare
-description: 'SideCare is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Financial Services. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  SideCare is a French insurtech and HR-benefits platform (operated by Hoggo)
+  that helps companies build, deploy, and manage their employee health policy.
+  It brokers and administers collective health insurance (mutuelle) and
+  disability cover (prévoyance), comparing more than 15,500 contracts, and adds
+  a free SIRH/HR and quality-of-life (QVT) layer, a digital clinic with
+  telemedicine, and the SideCard prepaid health-expense card that advances up to
+  €1,500/month. Over 7,800 companies and 100,000+ insured individuals use the
+  platform. SideCare runs a "Sign in with SideCare" OpenID Connect identity
+  provider and integrates with payroll/HRIS tools such as PayFit, Lucca, and
+  Nibelis. Backed by Partech.
 url: https://raw.githubusercontent.com/api-evangelist/sidecare/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Financial Services
+- Insurance
+- Insurtech
+- Health Insurance
+- Employee Benefits
+- Human Resources
+- HRIS
+- France
+- OpenID Connect
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,30 @@ maintainers:
 common:
 - type: Website
   url: https://www.sidecare.com/
+- type: Login
+  url: https://www.sidecare.com/connexion-hub
+- type: Support
+  url: https://support.sidecare.com
+- type: Blog
+  url: https://www.sidecare.com/articles
+- type: TermsOfService
+  url: https://www.sidecare.com/cgu-rgpd
+- type: PrivacyPolicy
+  url: https://www.sidecare.com/cgu-rgpd
+- type: Authentication
+  url: authentication/sidecare-authentication.yml
+- type: OAuthScopes
+  url: scopes/sidecare-scopes.yml
+- type: OpenIDConnect
+  url: https://www.sidecare.com/.well-known/openid-configuration
+- type: WellKnown
+  url: well-known/sidecare-well-known.yml
+- type: Conformance
+  url: conformance/sidecare-conformance.yml
+- type: DomainSecurity
+  url: security/sidecare-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
