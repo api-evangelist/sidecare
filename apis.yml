@@ -47,7 +47,7 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Insurance
 - Insurtech
 - Health Insurance
@@ -55,7 +55,6 @@ tags:
 - Human Resources
 - HRIS
 - France
-- OpenID Connect
 tags_raw:
 - Company
 - Financial Services
@@ -66,7 +65,7 @@ tags_raw:
 - Human Resources
 - HRIS
 - France
-- OpenID Connect
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -103,3 +102,5 @@ x-enrichment:
   status: enriched
   artifacts_added: 6
   pass: local-v1
+x-tags-removed:
+- OpenID Connect
