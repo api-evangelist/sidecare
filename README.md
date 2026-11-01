@@ -64,6 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SideCare is a company surfaced as a portfolio company of partech and added to the API Evangelist network as a stub for enrichment. Sector: Financial Services. This profile is a lead awaiting the enrichment pipeline.
+SideCare is a French insurtech and HR-benefits platform (operated by Hoggo) that helps companies build, deploy, and manage their employee health policy. It brokers and administers collective health insurance (mutuelle) and disability cover (prévoyance), comparing more than 15,500 contracts, and adds a free SIRH/HR and quality-of-life (QVT) layer, a digital clinic with telemedicine, and the SideCard prepaid health-expense card that advances up to €1,500/month. Over 7,800 companies and 100,000+ insured individuals use the platform. SideCare runs a "Sign in with SideCare" OpenID Connect identity provider and integrates with payroll/HRIS tools such as PayFit, Lucca, and Nibelis. Backed by Partech.
 
-Backed by: partech — https://www.sidecare.com/
+**Areas:** Company · Financial Services · Insurance · Insurtech · Health Insurance · Employee Benefits · Human Resources · HRIS · France
+
+## SideCare on APIs.io
+
+Everything profiled for SideCare is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sidecare/](https://apis.io/providers/sidecare/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Sidecare Authentication](https://apis.io/security/sidecare/sidecare-authentication/)
+- [Sidecare Domain Security](https://apis.io/security/sidecare/sidecare-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Sidecare Scopes](https://apis.io/scopes/sidecare/sidecare-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.sidecare.com/)
+- [Support](https://support.sidecare.com)
+- [Blog](https://www.sidecare.com/articles)
+- [Terms of service](https://www.sidecare.com/cgu-rgpd)
+- [Privacy policy](https://www.sidecare.com/cgu-rgpd)
+
+## API Evangelist rating
+
+**Kin Score 19.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 27.6 |
+
+**Agent readiness 10.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 36.8** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sidecare/](https://apis.io/providers/sidecare/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SideCare: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sidecare/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
